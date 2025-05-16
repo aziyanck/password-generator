@@ -71,7 +71,7 @@ h3 {
 
 .slider input[type="range"] {
     width: 100%;
-    -webkit-appearance: none;
+    webkit-appearance: none;
     background: #2e2e38;
     height: 8px;
     border-radius: 5px;
@@ -139,5 +139,10 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .generate:hover {
+
     background-color: #98e87c;
+    /* border: 5px solid #6ab94d; Add border on hover */
+    box-shadow: 0 0 15px #6ac54e, 0 0 10px #70ca54;
+    transform: scale(1.01);
 }
+
