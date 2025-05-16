@@ -1,0 +1,143 @@
+/* Base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: #0e0e12;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.popup {
+    background-color: #1c1c22;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+h3 {
+    text-align: center;
+    color: #b3b3b3;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.displaybx {
+    background-color: #2e2e38;
+    padding: 12px 15px;
+    border-radius: 6px;
+    font-size: 18px;
+    color: #9effa0;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.displaybx {
+    cursor: pointer;
+}
+
+
+.displaybx::after {
+    content: '📋'; /* Icon-like clipboard (or use an actual icon in HTML) */
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.displaybx.copied::after {
+    content: '✅';
+}
+
+.controls h5 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #cfcfcf;
+}
+
+.slider input[type="range"] {
+    width: 100%;
+    -webkit-appearance: none;
+    background: #2e2e38;
+    height: 8px;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #7fff99;
+    cursor: pointer;
+}
+
+.conditions {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.conditions label {
+    margin-left: 8px;
+    color: #d0d0d0;
+}
+
+.strength {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.strength h4 {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.right {
+    display: flex;
+    gap: 5px;
+}
+
+.bars {
+    width: 10px;
+    height: 20px;
+    background-color: #2e2e38;
+    border-radius: 2px;
+}
+
+/* Button */
+.generate {
+    width: 100%;
+    padding: 12px;
+    background-color: #b0ff92;
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.generate:hover {
+    background-color: #98e87c;
+}

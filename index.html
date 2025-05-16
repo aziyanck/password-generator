@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="popup">
+            <h3>password generator</h3>
+            <div class="displaybx" id="displayBox">
+                <span id="outputPassword">P4$5W0rD!</span>
+                <span id="copyIcon"></span>
+            </div>
+
+            <div class="controls">
+                <div class="sl">
+                    <h5>Character Length: <span id="charLength">8</span></h5>
+                    <div class="slider">
+                        <input type="range" min="4" max="12" value="8" class="slider" id="myRange" />
+                    </div>
+                </div>
+
+                <div class="checks">
+                    <div class="conditions">
+                        <input type="checkbox" id="uppercase" />
+                        <label for="uppercase">Include Uppercase letters</label>
+                    </div>
+                    <div class="conditions">
+                        <input type="checkbox" id="lowercase" />
+                        <label for="lowercase">Include Lowercase letters</label>
+                    </div>
+                    <div class="conditions">
+                        <input type="checkbox" id="numbers" />
+                        <label for="numbers">Include Numbers</label>
+                    </div>
+                    <div class="conditions">
+                        <input type="checkbox" id="symbols" />
+                        <label for="symbols">Include Symbols</label>
+                    </div>
+                </div>
+
+                <div class="strength">
+                    <div class="left">
+                        <h4>Strength</h4>
+                    </div>
+                    <div class="right">
+                        <div class="bars"></div>
+                        <div class="bars"></div>
+                        <div class="bars"></div>
+                        <div class="bars"></div>
+                    </div>
+                </div>
+
+                <div class="btn">
+                    <button class="generate">Generate →</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
